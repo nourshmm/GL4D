@@ -1,0 +1,8 @@
+all:
+	libtoolize
+	autoreconf -i -Im4
+	aclocal
+	autoconf
+	automake --add-missing
+clean:
+	@rm -rf missing aclocal.m4 autom4te.cache compile config.log configure install-sh config.guess config.sub ltmain.sh config.status INSTALL libtool depcomp *~
